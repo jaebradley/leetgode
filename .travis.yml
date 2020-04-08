@@ -1,8 +1,0 @@
-language: golang
-
-go:
-  - 1.14.1
-  - master
-
-script:
-  - go test ./...

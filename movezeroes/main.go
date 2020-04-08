@@ -33,9 +33,9 @@ func moveZeroes(nums []int) {
 		}
 
 		if nums[zeroIndex] != 0 {
-			zeroIndex += 1
+			zeroIndex++
 		}
 
-		nonZeroIndex += 1
+		nonZeroIndex++
 	}
 }
