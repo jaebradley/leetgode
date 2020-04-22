@@ -71,7 +71,7 @@ func TestIntersectionOfListsWithDifferentLengths(t *testing.T) {
 }
 
 
-func TestNoIntersectionForTwoSeparateLists(t testing.T) {
+func TestNoIntersectionForTwoSeparateLists(t *testing.T) {
 	first := &ListNode{
 		Val: 1,
 		Next: &ListNode{
