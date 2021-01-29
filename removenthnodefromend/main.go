@@ -25,6 +25,15 @@ The number of nodes in the list is sz.
 1 <= sz <= 30
 0 <= Node.val <= 100
 1 <= n <= sz
+
+Approach:
+
+1. Two pointers - iterate through list using 1 pointer, n + 1 times
+2. Start second pointer from beginning of list - when the first pointer gets to the end of the list, the second pointer will be at the node
+BEFORE the nth node from the end of the list
+3. Change the Next references for the current pointer (which is before the nth from end pointer) to skip a node
+4. Using the dummy node reference return the Next that it refers to (this is to protect against when n is the size of the list).
+In such a case, the dummy node would be the node before the nth node and thus would be the node that would "skip" the head node
 */
 
 // ListNode is the definition for singly-linked list.
